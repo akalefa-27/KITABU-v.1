@@ -61,5 +61,3 @@ Projet développé par **Michael Akalefa** pour la communauté estudiantine de l
 *© 2025 KITABU - Tous droits réservés.*
 
 ```
-
-```
