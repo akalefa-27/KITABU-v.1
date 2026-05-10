@@ -1,0 +1,344 @@
+/* RESET & STYLE DE BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #3a6ea5;
+  --primary-dark: #2c5282;
+  --dark-color: #2c3e50;
+  --light-color: #f8f9fa;
+  --gray-color: #6c757d;
+  --light-gray: #e9ecef;
+
+  --border-radius: 12px;
+  --border-radius-sm: 6px;
+  --box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+body {
+  font-family: "Poppins", sans-serif;
+  color: var(--dark-color);
+  background-color: var(--light-color);
+  line-height: 1.6;
+}
+
+/* TITRE & TEXTE */
+h1, h2, h3 {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+p {
+  margin-bottom: 16px;
+}
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* BOUTON */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 27px;
+  border-radius: var(--border-radius);
+  font-weight: 500;
+  border: none;
+}
+.btn-primary {
+  background: var(--primary-color);
+  color: white;
+}
+.search-btn {
+  background: var(--primary-dark);
+  color: white;
+  border-radius: var(--border-radius);
+}
+.submit-btn {
+  width: 100%;
+  justify-content: center;
+  font-size: 18px;
+  padding: 16px 32px;
+}
+
+/* HEADER */
+header {
+  background: white;
+  box-shadow: var(--box-shadow);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 16px;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo h1 {
+  color: var(--primary-color);
+  margin-bottom: 0;
+}
+.tagline {
+  font-size: 14px;
+  color: var(--gray-color);
+  margin-bottom: 0;
+  font-style: italic;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  margin-left: 45px;
+}
+nav ul li a {
+  color: var(--dark-color);
+  font-weight: 500;
+  padding: 8px 16px;
+  border-radius: var(--border-radius-sm);
+}
+nav ul li a.active {
+  color: var(--primary-color);
+  background-color: rgba(58, 110, 165, 0.1);
+}
+
+/* HERO */
+.hero {
+  padding: 48px 0;
+  background: var(--primary-color);
+}
+.hero .container {
+  display: flex;
+  align-items: center;
+  gap: 48px;
+}
+.hero-content {
+  flex: 1;
+}
+.hero-content h2 {
+  font-size: 45px;
+  margin-bottom: 24px;
+  color: var(--light-color);
+}
+.hero-content p {
+  font-size: 19px;
+  margin-bottom: 32px;
+  color: var(--light-color);
+}
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+.hero-image img {
+  max-width: 100%;
+  border-radius: var(--border-radius);
+}
+
+/* INTRODUCTION */
+.kitabu-intro {
+  padding: 48px 0;
+  background: white;
+}
+.kitabu-intro h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 35px;
+  color: var(--primary-dark);
+}
+.intro-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  font-size: 21px;
+  line-height: 2;
+}
+.intro-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 32px;
+  display: grid;
+  gap: 24px;
+}
+.intro-list li {
+  display: flex;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 16px;
+  border-radius: var(--border-radius-sm);
+  color: var(--light-color);
+}
+.intro-list li i {
+  margin-right: 16px;
+  font-size: 16px;
+}
+
+/* RECHERCHE */
+.search-section {
+  padding: 48px 0;
+  background-color: white;
+}
+.search-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 35px;
+}
+.search-box {
+  display: flex;
+  margin-bottom: 24px;
+  box-shadow: var(--box-shadow);
+}
+.search-box input {
+  flex: 1;
+  padding: 16px;
+  border: none;
+  font-size: 16px;
+  outline: none;
+}
+
+/* CATALOGUE */
+.catalogue-section {
+  padding: 48px 0;
+  background: var(--light-gray);
+}
+.catalogue-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 35px;
+}
+.books-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 32px;
+}
+.book-card {
+  background-color: white;
+  border-radius: var(--border-radius);
+}
+.book-image {
+  height: 250px;
+}
+.book-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.book-info {
+  padding: 16px;
+}
+.book-info h3 {
+  font-size: 29px;
+  margin-bottom: 8px;
+  color: var(--dark-color);
+}
+.book-info p {
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--gray-color);
+}
+.book-info .btn{
+  display: block;
+  margin: 14px ;
+  text-align: center;
+}
+
+/* RÉSERVATION */
+.reservation-section {
+  padding: 48px 0;
+  background-color: white;
+}
+.reservation-content {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 32px;
+}
+.reservation-content h2 {
+  font-size: 35px;
+  margin-bottom: 24px;
+}
+.reservation-form {
+  max-width: 900px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 50px;
+  border-radius: var(--border-radius);
+  border: 2px solid var(--primary-color);
+}
+.livre-selectionne {
+  text-align: center;
+  padding: 8px;
+  border: 2px solid var(--primary-color);
+  border-radius: var(--border-radius);
+  font-weight: bold;
+}
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+.form-group {
+  margin-bottom: 24px;
+}
+.form-group label {
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 13px;
+  border: 2px solid var(--light-gray);
+  border-radius: var(--border-radius);
+  font-size: 16px;
+  outline: none;
+}
+
+/* POINTS DE RETRAIT */
+.points-section {
+  padding: 48px 0;
+  background: #f0f4f8;
+}
+.points-section h2 {
+  text-align: center;
+  margin-bottom: 32px;
+  font-size: 35px;
+}
+.points-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 32px;
+}
+.point-card {
+  background-color: white;
+  padding: 32px;
+  border-radius: var(--border-radius);
+  text-align: center;
+  border: 2px solid var(--primary-color);
+}
+.point-card p {
+  font-size: 14px;
+  color: var(--gray-color);
+  line-height: 1.6;
+}
+
+/* FOOTER */
+footer {
+  background: var(--dark-color);
+  padding: 48px 0 24px;
+}
+.footer-bottom {
+  text-align: center;
+  color: #adb5bd;
+  font-size: 14px;
+}
