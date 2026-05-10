@@ -54,7 +54,7 @@ Le projet repose sur une vision claire : **Remettre le livre au cœur de l'appre
 
 ### 🎓 Crédits
 
-Projet développé par **Michael Shamba Akalefa** pour la communauté estudiantine de l'**Université Protestante au Congo (UPC)**.
+Projet développé par **Michael Akalefa** pour la communauté estudiantine de l'**Université Protestante au Congo (UPC)**.
 
 ---
 
